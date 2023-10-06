@@ -16,7 +16,7 @@ const Home = () => {
         </ul>
       </nav>
 
-          <Image id='awoooga' src={"/aaa.png"} width={800} height={400} style={{width:'100%'}} alt='me'/>
+          <Image id='awoooga' src={"/aaa.png"} width={800} height={400} style={{width:'100%', maxHeight:'40vw'}} alt='me'/>
       <main>
         <section>
           <h2>About Me</h2>
