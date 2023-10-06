@@ -1,0 +1,12 @@
+/* global.css */
+
+body {
+    /* Other styles */
+    background-image: url("../portfolio-background.png"); 
+    background-position: 0%;
+    background-position-x: center;  
+    /* background-size: 90%; */
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+  }
+  
