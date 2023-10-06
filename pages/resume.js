@@ -7,7 +7,7 @@ const Resume = () => {
       <header>
         <h1>Aryan</h1>
         <p>Web Developer🤓</p>
-      </header>
+      </header> 
 
       <section>
         <h2>Summary</h2>
