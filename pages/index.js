@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import Header from '../components/header';
 import Link from 'next/link';
+import Footer from '../components/footer';
 const Home = () => {
   return (
     <>
@@ -27,12 +28,13 @@ const Home = () => {
             The door stay locked, it dont say knock
             We on they block, we own they block
             Is Monopoly games, we stole they property</p>
-            <h2>Check Out My YouTube Channel</h2>
-          <p>Watch my latest videos on my <a href="https://www.youtube.com/AryanMallik" target="_blank"><b><u>YouTube channel</u></b></a></p>
+            <h2>Check Out My <a href="https://www.youtube.com/AryanMallik" target="_blank"><b><u>YouTube channel</u></b></a></h2>
+            <br/>
       <Link className="btn btn-primary" href={"resume"}>My Photos</Link>
     </div>
   </div>
 </div>
+<Footer/>
     </>
   );
 };

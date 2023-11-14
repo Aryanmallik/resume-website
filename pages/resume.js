@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 // import styles from '../styles/styles.css';
 import Header from "../components/header";
+import Footer from '../components/footer';
 const Resume = () => {
   return (
     <div>
@@ -228,7 +229,7 @@ const Resume = () => {
     </div> 
 </div>
 </div>
-
+<Footer/>
  </div>
   );
 };
