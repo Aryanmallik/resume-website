@@ -1,0 +1,17 @@
+.diva {
+    display: block;
+  }
+  
+  .divmobile {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .diva {
+        display: none;
+    }
+  
+    .divmobile {
+        display: block;
+    }
+  }
