@@ -15,15 +15,14 @@ const Home = () => {
       <div className="hero-overlay bg-opacity-60"></div>
 
   <div className="hero-content flex-col lg:flex-row-reverse">
-    <img src="/wat.jpg" className="max-w-sm rounded-lg shadow-2xl" />
-    <div>
+    <div style={{marginLeft:"5rem"}}>
       <h1 className="text-5xl font-bold">About Me</h1>
-      <p className="py-6">Hi, Im Aryan. I take photso. my camera is nikon D5300🤢.<br/>
-      im a student, allah the all mighty...</p>
+      <p className="py-6">Hi👋🏻, Im Aryan👦🏻. I take photso📸. my camera📸 is nikon D5300🤢.<br/></p>
             <h2>Check Out My <a href="https://www.youtube.com/AryanMallik" target="_blank"><b><u>YouTube channel</u></b></a></h2>
             <br/>
       <Link className="btn btn-primary" href={"resume"}>My Photos</Link>
     </div>
+    <img src="/pic.jpg" className=" rounded-lg shadow-2xl" style={{width:"30rem"}}/>
   </div>
 </div>
 <Footer/>
