@@ -8,11 +8,12 @@ import styles from "../styles/index.module.css";
 const Home = () => {
   return (
     <>
-    <div className={styles.diva}>
       <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com" />  
-    <Header/>
 
+     
+  <Header/>
+    <div className={styles.diva}>
       <div className="hero h-screen"  style={{backgroundImage: 'url("bg.jpg")'}}>
       <div className="hero-overlay bg-opacity-60"></div>
 
@@ -30,10 +31,6 @@ const Home = () => {
 </div>
 
 <div className={styles.divmobile}>
-      <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com" />  
-    <Header/>
-
       <div className="hero h-screen"  style={{backgroundImage: 'url("bg.jpg")'}}>
       <div className="hero-overlay bg-opacity-60"></div>
 

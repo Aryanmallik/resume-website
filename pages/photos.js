@@ -11,7 +11,7 @@ const Resume = () => {
     <script src="https://cdn.tailwindcss.com" />
 <Header/>
 <div className={"bg-black"}>
-  <h1 className={"font-bold"}>Beachs</h1>
+  <h1 className={"font-bold"}>Beaches</h1>
 <div className="carousel carousel-center max-w-full p-4 space-x-5  rounded-box">
     
     <div className="carousel-item">
