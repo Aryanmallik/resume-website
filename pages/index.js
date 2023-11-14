@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Header from '../components/header';
 import Link from 'next/link';
 import Footer from '../components/footer';
-import styles from '../styles/index.module.css';
+import styles from "../styles/index.module.css";
 const Home = () => {
   return (
     <>
@@ -36,9 +36,9 @@ const Home = () => {
 
       <div className="hero h-screen"  style={{backgroundImage: 'url("bg.jpg")'}}>
       <div className="hero-overlay bg-opacity-60"></div>
-    <img src="/pic.jpg" className=" rounded-lg shadow-2xl" style={{width:"30rem"}}/>
 
   <div className="hero-content flex-col lg:flex-row-reverse">
+    <img src="/pic.jpg" className=" rounded-lg shadow-2xl" style={{width:"30rem"}}/>
     <div style={{marginLeft:"5rem"}}>
       <h1 className="text-5xl font-bold">About Me</h1>
       <p className="py-6">Hi👋🏻, Im Aryan👦🏻. I take photso📸. my camera📸 is nikon D5300🤢.<br/></p>
