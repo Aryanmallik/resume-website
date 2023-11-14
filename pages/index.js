@@ -41,7 +41,7 @@ const Home = () => {
       <p className="py-6">Hi👋🏻, Im Aryan👦🏻. I take photso📸. my camera📸 is nikon D5300🤢.<br/></p>
             <h2>Check Out My <a href="https://www.youtube.com/AryanMallik" target="_blank"><b><u>YouTube channel</u></b></a></h2>
             <br/>
-      <Link className="btn btn-primary" href={"resume"}>My Photos</Link>
+      <Link className="btn btn-primary" href={"photos"}>My Photos</Link>
     </div>
   </div>
 </div>
