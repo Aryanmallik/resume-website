@@ -23,7 +23,7 @@ const Home = () => {
       <p className="py-6">Hi👋🏻, Im Aryan👦🏻. I take photso📸. i use a d5300🤓🤢.<br/></p>
             <h2>Check Out My <a href="https://www.youtube.com/AryanMallik" target="_blank"><b><u>YouTube channel</u></b></a></h2>
             <br/>
-      <Link className="btn btn-primary" href={"resume"}>My Photos</Link>
+      <Link className="btn btn-primary" href={"photos"}>My Photos</Link>
     </div>
     <img src="/pic.jpg" className=" rounded-lg shadow-2xl" style={{width:"30rem"}}/>
   </div>
