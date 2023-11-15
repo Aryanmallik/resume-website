@@ -163,6 +163,12 @@ const Resume = () => {
    </div>
     </div>
 
+    <div className="carousel-item">
+ <div className="h-96 carousel carousel-vertical rounded-box">
+   <div className="carousel-item h-full"><img src="/15.5.jpg" />
+   </div> 
+   </div>
+    </div>
 
     <div className="carousel-item">
  <div className="h-96 carousel carousel-vertical rounded-box">
@@ -170,6 +176,8 @@ const Resume = () => {
    </div> 
    </div>
     </div>
+
+
     <div className="carousel-item">
  <div className="h-96 carousel carousel-vertical rounded-box">
    <div className="carousel-item h-full"><img src="/15.jpg" />
