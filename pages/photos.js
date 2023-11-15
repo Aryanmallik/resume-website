@@ -44,7 +44,7 @@ const Resume = () => {
 
     <div className="carousel-item">
  <div className="h-96 carousel carousel-vertical rounded-box">
-   <div className="carousel-item h-full"><img src="/21.1.jpg" />
+   <div className="carousel-item h-full"><img src="/21.1.jpg" alt='pic'/>
    </div> 
    </div>
     </div>
