@@ -31,7 +31,7 @@ const Home = () => {
 </div>
 
 <div className={styles.divmobile}>
-      <div className="hero h-screen"  style={{backgroundImage: 'url("bg.jpg")'}}>
+      <div className="hero h-screen"  style={{backgroundColor:"black"}}>
       <div className="hero-overlay bg-opacity-60"></div>
 
   <div className="hero-content flex-col lg:flex-row-reverse">
