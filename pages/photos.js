@@ -23,7 +23,7 @@ const Resume = () => {
 
     <div className="carousel-item">
  <div className="h-96 carousel carousel-vertical rounded-box">
-   <div className="carousel-item h-full"><img src="/17.jpg" />
+   <div className="carousel-item h-full"><img src="/19.jpg" />
    </div> 
    </div>
     </div>
@@ -37,7 +37,7 @@ const Resume = () => {
 
     <div className="carousel-item">
  <div className="h-96 carousel carousel-vertical rounded-box">
-   <div className="carousel-item h-full"><img src="/19.jpg" />
+   <div className="carousel-item h-full"><img src="/17.jpg" />
    </div> 
    </div>
     </div>
