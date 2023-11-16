@@ -1,8 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 export default function Header(){
 return<>
 <nav id="heads">
-       
+<div>
 <div className="navbar bg-black">
   <div className="flex-none">
     <div className=" drawer">
@@ -19,6 +20,12 @@ return<>
     </ul>
   </div>
 </div>
+  </div>
+  <div className="navbar justify-center">
+  <Link href="/" >
+              <p ><Image src={'/LOgo.png'} width={825} height={302} alt='' style={{height:"6.5rem", width:"6.5rem"}}></Image></p>
+            </Link>
+  </div>
   </div>
   </div>
   
