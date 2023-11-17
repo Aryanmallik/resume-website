@@ -8,7 +8,8 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>N!gga</title>
-        <meta name="🤓" content="I take photos🤓" />
+        {/* <meta name="🤓" content="I take photos🤓" /> */}
+        <meta name="google-site-verification" content="UHkTP1PKasHo-DdxCFLDFX6ENef_XUjgoVmavk0bMTg" />
       </Head>
       <div className="app-container">
         
