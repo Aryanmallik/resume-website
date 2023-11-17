@@ -5,9 +5,13 @@ import Header from '../components/header';
 import Link from 'next/link';
 import Footer from '../components/footer';
 import styles from "../styles/index.module.css";
+import Head from 'next/head';
 const Home = () => {
   return (
     <>
+    <head>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+     </head>
       <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com" />  
 
