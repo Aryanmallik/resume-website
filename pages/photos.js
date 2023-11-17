@@ -8,9 +8,9 @@ const Resume = () => {
   return (
     
     <div>
-      <head>
+      <Head>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    </head>
+    </Head>
 
         <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com" />
