@@ -5,10 +5,11 @@ import Link from 'next/link';
 import Header from "../components/header";
 import Footer from '../components/footer';
 import { Html } from 'next/document';
+import Head from 'next/head';
 const Resume = () => {
   return (
-    
-    <Html>
+    <div>
+
       <Head>
   <link rel="shortcut icon" href="/favicon/favicon.ico" />
     </Head>
@@ -244,7 +245,7 @@ const Resume = () => {
 </div>
 </div>
 <Footer/>
- </Html>
+ </div>
   );
 };
 
