@@ -15,13 +15,13 @@ const Footer = () => {
       <div className={styles.socialIcons}>
         <p className={styles.p}>Reach me at</p>
         <a href="https://www.instagram.com/aryanmallikk">
-          <FontAwesomeIcon icon={faInstagram} style={{height:"1.2rem"}} ></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faInstagram} style={{height:"1.1rem"}} ></FontAwesomeIcon>
         </a>
         <a href="tel:+919686629493">
-          <FontAwesomeIcon icon={faPhone} style={{height:"1.2rem"}} />
+          <FontAwesomeIcon icon={faPhone} style={{height:"1.1rem"}} />
         </a>
         <a href="mailto:aryanmallik2004@gmail.com">
-          <FontAwesomeIcon icon={faEnvelope} style={{height:"1.2rem"}} />
+          <FontAwesomeIcon icon={faEnvelope} style={{height:"1.1rem"}} />
         </a>
       </div>
 
