@@ -4,12 +4,13 @@ import Link from 'next/link';
 // import styles from '../styles/styles.css';
 import Header from "../components/header";
 import Footer from '../components/footer';
+import { Html } from 'next/document';
 const Resume = () => {
   return (
     
-    <div>
+    <Html>
       <Head>
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
     </Head>
 
         <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
@@ -243,7 +244,7 @@ const Resume = () => {
 </div>
 </div>
 <Footer/>
- </div>
+ </Html>
   );
 };
 

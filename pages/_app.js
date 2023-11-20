@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
         <title>N!gga</title>
         {/* <meta name="🤓" content="I take photos🤓" /> */}
         <meta name="google-site-verification" content="UHkTP1PKasHo-DdxCFLDFX6ENef_XUjgoVmavk0bMTg" />
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
       <div className="app-container">
         

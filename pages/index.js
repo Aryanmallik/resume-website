@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
     <Head>
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
      </Head>
       <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com" />  
