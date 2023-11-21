@@ -1,12 +1,10 @@
 // pages/resume.js
 import React from 'react';
-import Link from 'next/link';
 // import styles from '../styles/styles.css';
-import Header from "../components/header";
-import Footer from '../components/footer';
-import { Html } from 'next/document';
+import Header from '../../../components/header';
+import Footer from '../../../components/footer';
 import Head from 'next/head';
-const Resume = () => {
+export default function Resume(){
   return (
     <div>
 
@@ -248,5 +246,3 @@ const Resume = () => {
  </div>
   );
 };
-
-export default Resume;
