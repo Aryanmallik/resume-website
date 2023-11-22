@@ -215,7 +215,7 @@ export default function Resume(){
 
     <div className="carousel-item">
  <div className="h-96 carousel carousel-vertical rounded-box">
-   <div className="carousel-item h-full"><img src="/22.jpg" />
+   <div className="carousel-item h-full"><img src="/22.jpg" alt='Night sky' />
    </div> 
    </div>
     </div>
