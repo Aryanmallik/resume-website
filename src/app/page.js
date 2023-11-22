@@ -43,8 +43,7 @@ const Home = () => {
                 </a>
               </h2>
               <br />
-              <Link className="btn btn-primary" href={"photos"}>
-                My Photos
+              <Link href={"photos"} className="btn glass">My Photos
               </Link>
             </div>
             <img
