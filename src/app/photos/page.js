@@ -1,7 +1,7 @@
 // pages/resume.js
 import React from 'react';
 // import styles from '../styles/styles.css';
-import Header from '../../../components/header';
+import Header from '../../../components/header copy';
 import Footer from '../../../components/footer';
 import Head from 'next/head';
 export default function Resume(){
