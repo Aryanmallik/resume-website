@@ -80,7 +80,7 @@ const Home = () => {
                 </a>
               </h2>
               <br />
-              <Link className="btn btn-primary" href="/photos">
+              <Link className="btn glass" href="/photos">
                 My Photos
               </Link>
             </div>
