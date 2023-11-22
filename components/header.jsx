@@ -4,7 +4,7 @@ export default function Header(){
 return<>
 <nav id="heads">
 <div>
-<div className="navbar bg-black">
+<div className="navbar">
   <div className="flex-none">
     <div className=" drawer">
   <input id="my-drawer" type="checkbox" className="drawer-toggle" />
