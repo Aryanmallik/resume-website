@@ -14,7 +14,7 @@ export default function RootLayout({
           name="google-site-verification"
           content="UHkTP1PKasHo-DdxCFLDFX6ENef_XUjgoVmavk0bMTg"
         />
-          <link rel="icon" type="image/png" sizes="16x16" href="/img/LOgo.png"/>
+          <link rel="icon" type="image/png" sizes="16x16" href="/img/logo.png"/>
       </head>
 
       <body>{children}</body>

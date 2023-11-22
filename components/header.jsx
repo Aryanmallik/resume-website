@@ -23,7 +23,7 @@ return<>
   </div>
   <div className="navbar justify-center">
   <Link href="/" >
-              <p ><Image src={'/LOgo.png'} width={825} height={302} alt='' style={{height:"6.5rem", width:"6.5rem"}}></Image></p>
+              <p ><Image src={'/logo.png'} width={825} height={302} alt='' style={{height:"6.5rem", width:"6.5rem"}}></Image></p>
             </Link>
   </div>
   </div>
