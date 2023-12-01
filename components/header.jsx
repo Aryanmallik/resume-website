@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
+import styles from "../styles/header.module.css"
 export default function Header(){
 return<>
-<nav id="heads">
-<div>
+<div className={styles.navbar}>
 <div className="navbar">
   <div className="flex-none">
     <div className=" drawer">
@@ -29,6 +29,5 @@ return<>
   </div>
   </div>
   
-</nav>
 </>
 }
