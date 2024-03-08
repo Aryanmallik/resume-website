@@ -8,7 +8,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>N!gga</title>
+        <title>Aryan</title>
         {/* <meta name="🤓" content="I take photos🤓" /> */}
         <meta
           name="google-site-verification"
