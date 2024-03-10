@@ -9,9 +9,7 @@ import Head from "next/head";
 const Home = () => {
   return (
     <>
-      <Head>
-        {/* <link rel="shortcut icon" href="/favicon/favicon.ico" /> */}
-      </Head>
+
       <link
         href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css"
         rel="stylesheet"
@@ -31,7 +29,7 @@ const Home = () => {
             <div style={{ marginLeft: "5rem" }}>
               <h1 className="text-5xl font-bold">About Me</h1>
               <p className="py-6">
-                Hi👋🏻, Im Aryan👦🏻. I take photso📸. i use a d5300🤓🤢.
+                Hi👋🏻, Im Aryan👦🏻. I take photso📸.
                 <br />
               </p>
               <h2>
@@ -43,7 +41,8 @@ const Home = () => {
                 </a>
               </h2>
               <br />
-              <Link href={"photos"} className="btn glass">My Photos
+              <Link href={"photos"} className="btn glass">
+                My Photos
               </Link>
             </div>
             <img
