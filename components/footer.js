@@ -23,7 +23,7 @@ const Footer = () => {
         <a target='_blank' href="mailto:aryanmallik2004@gmail.com">
           <FontAwesomeIcon icon={faEnvelope} style={{height:"1.1rem"}} />
         </a>
-        <a target='_blank' href="www.linkedin.com/in/aryanmallikkk">
+        <a target='_blank' href="https://www.linkedin.com/in/aryanmallikkk">
           <FontAwesomeIcon icon={faLinkedin} style={{height:"1.1rem"}} />
         </a>
       </div>
