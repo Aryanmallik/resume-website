@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import Footer from '@/components/footer';
-import Headers from "@/components/header";
+import Header from "@/components/header";
 
 const Resume = () => {
     const [beachImages, setBeachImages] = useState([]);
@@ -52,7 +52,7 @@ const Resume = () => {
     return (
         <div>
             <head><link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" /> </head>
-            <Headers />
+            <Header />
 
             <div className={"bg-black"}>
                 <h1 className={"font-bold"}>Beaches</h1>
