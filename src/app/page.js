@@ -32,10 +32,9 @@ const Home = () => {
                                     About Me...
                                 </div>
                             </div>
-                            <p className="py-6">
-                                Hi👋🏻, Im Aryan👦🏻. I take photso📸.
-                                <br />
-                            </p>
+                            <div className={styles.herocontainer}>
+                                <div className={styles.environment}></div>
+                                <h2 className={`${styles.movement} ${styles.glitch} ${styles.hero} ${styles.layers}`} data-text=""><span>Hi👋🏻,Im Aryan👦🏻. I take photso📸.
                             <h2>
                                 Check Out My{" "}
                                 <a href="https://www.youtube.com/AryanMallik" target="_blank">
@@ -45,9 +44,11 @@ const Home = () => {
                                 </a>
                             </h2>
                             <br />
-                            <Link href={"photos"} className="btn glass">
+                            <Link href={"photos"} className={`btn black ${styles.lnker}`}>
                                 My Photos
                             </Link>
+        </span></h2>
+                            </div>
                         </div>
                         <img
                             src="/pic.jpg"
@@ -69,11 +70,14 @@ const Home = () => {
                             style={{ width: "30rem" }}
                         />
                         <div style={{ marginLeft: "5rem" }}>
-                            <h1 className="text-5xl font-bold">About Me</h1>
-                            <p className="py-6">
-                                Hi👋🏻, Im Aryan👦🏻. I take photso📸. my camera📸 is nikon D5300🤢.
-                                <br />
-                            </p>
+                            <div className={styles.wrapper}>
+                                <div className={styles.typingdemo}>
+                                    About Me...
+                                </div>
+                            </div>
+                            <div className={styles.herocontainer}>
+                                <div className={styles.environment}></div>
+                                <h2 className={`${styles.movement} ${styles.glitch} ${styles.hero} ${styles.layers}`} data-text=""><span>Hi👋🏻,Im Aryan👦🏻. I take photso📸.
                             <h2>
                                 Check Out My{" "}
                                 <a href="https://www.youtube.com/AryanMallik" target="_blank">
@@ -83,9 +87,12 @@ const Home = () => {
                                 </a>
                             </h2>
                             <br />
-                            <Link className="btn glass" href="/photos">
+                            <Link href={"photos"} className={`btn black ${styles.lnker}`}>
                                 My Photos
                             </Link>
+        </span></h2>
+                            </div>
+
                         </div>
                     </div>
                 </div>
