@@ -1,0 +1,52 @@
+'use client'
+import styles from '../styles/Hero.module.scss';
+import Link from 'next/link'
+import React, { useEffect, useRef } from 'react';
+
+const Hero = () => {
+  return (
+    <>
+      <div className={styles.heroWrapper}>
+        <div className={styles.stars}></div>
+        <div className={styles.stars2}></div>
+        <div className={styles.starts3}></div>
+        <div className={styles.hero}>
+          <div className={styles.sidebarLeft}>
+            <ul className={styles.sidebarList}>
+              <li><Link href="#Photos">Photos(Not ready)</Link></li>
+              <li><Link href="#AboutMe">About Me(Not ready)</Link></li>
+              <li><Link href="https://github.com/Aryanmallik">Github</Link></li>
+            </ul>
+          </div>
+
+          <div className={styles.hero__bg}>
+            <picture>
+              <img src="20.png" alt="Hero Background" />
+            </picture>
+          </div>
+          <div className={styles.sidebarRight}>
+            <ul className={styles.sidebarList}>
+              <li><Link href="mailto:aryanmallik2004@gmail.com">Mail</Link></li>
+              <li><Link href="https://linkedin.com/in/aryanmallikkk">Linkdln</Link></li>
+              <li><Link href="tel:+919686629493">Phone</Link></li>
+            </ul>
+          </div>
+
+          <div className={styles.hero__cnt}>
+            <div className={styles.container}>
+              <p className={styles.text}>Hello! I'm</p>
+              <section className={styles.animation}>
+                <div className={styles.first}><div>Aryan</div></div>
+                <div className={styles.second}><div>Web Developer</div></div>
+                <div className={styles.third}><div>Photographer</div></div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Hero;
+
