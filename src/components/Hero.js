@@ -1,5 +1,5 @@
 'use client'
-import styles from '../styles/Hero.module.scss';
+import styles from '../styles/Hero.module.css';
 import Link from 'next/link';
 import React from 'react';
 
@@ -7,14 +7,11 @@ const Hero = () => {
   return (
     <>
       <div className={styles.heroWrapper}>
-        <div className={styles.stars}></div>
-        <div className={styles.stars2}></div>
-        <div className={styles.stars3}></div>
         <div className={styles.hero}>
           <div className={styles.sidebarLeft}>
             <ul className={styles.sidebarList}>
               <li><Link href="#Photos">Photos(Not ready)</Link></li>
-              <li><Link href="#AboutMe">About Me(Not ready)</Link></li>
+              <li><Link href="./aboutme">About Me(Not ready)</Link></li>
               <li><Link href="https://github.com/Aryanmallik">Github</Link></li>
             </ul>
           </div>

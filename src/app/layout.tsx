@@ -1,4 +1,4 @@
-import "../styles/global.css"
+import "../styles/global.scss"
 export const metadata = {
     title: 'Aryan',
     description: '',
@@ -15,6 +15,9 @@ export default function RootLayout({
             <body>
                 <link rel="icon" type="image/png" href="/img/logo.PNG" />
                 <div className="container">{children}</div>
+        <div className="stars"> </div>
+        <div className="stars2"> </div>
+        <div className="stars3"> </div>
             </body>
         </html>
     )
