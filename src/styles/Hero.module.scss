@@ -300,7 +300,9 @@ $shadows-big: multiple-box-shadow(100);
   }
 
   .hero__bg {
-    display: none;
   }
+.hero__bg img {
+    height:30vh;
+}
 }
 
