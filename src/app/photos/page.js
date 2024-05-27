@@ -152,7 +152,7 @@ const Resume = () => {
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
                     onClick={closeModal}
                 >
-                    <div className="relative max-w-screen-lg mx-auto">
+                    <div className="relative max-w-screen-lg mx-auto rounded-xl overflow-hidden">
                         <img
                             crossOrigin="anonymous"
                             src={selectedImageUrl}
