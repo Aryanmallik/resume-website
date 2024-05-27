@@ -1,5 +1,3 @@
-import type { Config } from "tailwindcss";
-
 module.exports = {
     content: [
       "./components/**/*.{js,ts,jsx,tsx,mdx}",
