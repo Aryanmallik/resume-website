@@ -13,7 +13,7 @@ export default function RootLayout({
         <html lang="en">
             <head><meta name="google-site-verification" content="UHkTP1PKasHo-DdxCFLDFX6ENef_XUjgoVmavk0bMTg" /></head>
             <body>
-                <link rel="icon" type="image/png" href="/img/logo.PNG" />
+                <link rel="icon" type="image/png" href="/img/LOgo.png" />
                 <div>{children}</div>
         <div className="stars"> </div>
         <div className="stars2"> </div>
