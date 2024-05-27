@@ -53,18 +53,19 @@ const Resume = () => {
 
   return (
     <div>
-      <Header/>
+      <Header />
       <div className={"bg-black"}>
-        <h1 className={"font-bold"}>Beaches</h1>
+        <h1 className={"font-bold text-white"}>Beaches</h1>
         <div className="carousel carousel-center p-4 max-w-full space-x-5 rounded-box">
           {beachImages.map((image, index) => (
-            <div className="carousel-item">
-              <div className="h-96 carousel carousel-vertical rounded-box">
-                <div className="carousel-item h-full">
+            <div className="carousel-item" key={index}>
+              <div className="carousel-item h-48 sm:h-96 carousel carousel-vertical rounded-box">
+                <div className="h-full">
                   <img
                     crossOrigin="anonymous"
                     src={image.url}
                     alt={`Beach ${index}`}
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
@@ -74,17 +75,17 @@ const Resume = () => {
       </div>
 
       <div className={"bg-black"}>
-        <h1 className={"font-bold"}>Concerts</h1>
+        <h1 className={"font-bold text-white"}>Concerts</h1>
         <div className="carousel carousel-center max-w-full p-4 space-x-5 rounded-box">
           {concertImages.map((image, index) => (
-            <div className="carousel-item">
-              <div className="h-96 carousel carousel-vertical rounded-box">
-                <div className="carousel-item h-full">
+            <div className="carousel-item" key={index}>
+              <div className="carousel-item h-48 sm:h-96 carousel carousel-vertical rounded-box">
+                <div className="h-full">
                   <img
                     crossOrigin="anonymous"
                     src={image.url}
                     alt={`Concert ${index}`}
-                    height={200}
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
@@ -94,17 +95,17 @@ const Resume = () => {
       </div>
 
       <div className={"bg-black"}>
-        <h1 className={"font-bold"}>Nature</h1>
+        <h1 className={"font-bold text-white"}>Nature</h1>
         <div className="carousel carousel-center max-w-full p-4 space-x-5 rounded-box">
           {natureImages.map((image, index) => (
-            <div className="carousel-item">
-              <div className="h-96 carousel carousel-vertical rounded-box">
-                <div className="carousel-item h-full">
+            <div className="carousel-item" key={index}>
+              <div className="carousel-item h-48 sm:h-96 carousel carousel-vertical rounded-box">
+                <div className="h-full">
                   <img
                     crossOrigin="anonymous"
                     src={image.url}
                     alt={`Nature ${index}`}
-                    height={200}
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
@@ -114,17 +115,17 @@ const Resume = () => {
       </div>
 
       <div className={"bg-black"}>
-        <h1 className={"font-bold"}>Night Sky</h1>
+        <h1 className={"font-bold text-white"}>Night Sky</h1>
         <div className="carousel carousel-center max-w-full p-4 space-x-5 rounded-box">
           {nightSkyImages.map((image, index) => (
-            <div className="carousel-item">
-              <div className="h-96 carousel carousel-vertical rounded-box">
-                <div className="carousel-item h-full">
+            <div className="carousel-item" key={index}>
+              <div className="carousel-item h-48 sm:h-96 carousel carousel-vertical rounded-box">
+                <div className="h-full">
                   <img
                     crossOrigin="anonymous"
                     src={image.url}
                     alt={`Night sky ${index}`}
-                    height={200}
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
@@ -139,3 +140,4 @@ const Resume = () => {
 };
 
 export default Resume;
+
