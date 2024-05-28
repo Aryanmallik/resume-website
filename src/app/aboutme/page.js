@@ -1,8 +1,10 @@
 import styles from "@/src/styles/aboutme.module.scss";
 import ScrollDownArrow from "@/src/components/scroll";
+import Header from "@/src/components/header";
 const About = () => {
     return (
         <>
+        <Header/>
             <div className={styles.container}>
                 <div className={styles.animatedtitle}>
                     <div className={styles.texttop}>
