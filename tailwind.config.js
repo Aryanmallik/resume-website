@@ -1,9 +1,13 @@
 module.exports = {
     content: [
-      "./components/**/*.{js,ts,jsx,tsx,mdx}",
-      "./src/**/*.{js,ts,jsx,tsx,mdx}",
+        "./components/**/*.{js,ts,jsx,tsx,mdx}",
+        "./src/**/*.{js,ts,jsx,tsx,mdx}",
     ],
-  plugins: [require("daisyui")],
+    plugins: [require("daisyui")],
+    daisyui: {
+        themes:[],
+    },
+
 }
 
 
