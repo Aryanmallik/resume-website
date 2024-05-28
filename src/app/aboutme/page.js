@@ -19,7 +19,7 @@ const About = () => {
         <ScrollDownArrow/>
                 <div className={styles.hero}>
                     <div className={styles.text}>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula pretium, consequat ligula ac, tempor nulla. Cras mollis augue sapien, non cursus est lacinia in. Maecenas iaculis neque nisl, quis congue nibh rutrum eget. Curabitur porta felis id fringilla elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat felis tincidunt justo posuere vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ultrices, lacus vel pulvinar hendrerit, elit nibh fermentum eros, eu mollis urna purus vitae metus. Nulla ac facilisis ipsum. Curabitur dapibus leo at orci maximus, at placerat justo laoreet. Pellentesque vitae accumsan lacus. Donec fermentum luctus lorem ut aliquet. Phasellus vitae nunc et ipsum faucibus vestibulum eget nec leo.
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula pretium, consequat ligula ac, tempor nulla. Cras mollis augue sapien, non cursus est lacinia in. Maecenas iaculis neque nisl, quis congue nibh rutrum eget. Curabitur porta felis id fringilla elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat felis tincidunt justo posuere vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
         </p>
                     </div>
                     <div className={styles.picDiv}>
