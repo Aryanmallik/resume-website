@@ -1,72 +1,101 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
-
 @keyframes showTopText {
   0% { transform: translate3d(0, 100%, 0); }
   40%, 60% { transform: translate3d(0, 50%, 0); }
   100% { transform: translate3d(0, 0, 0); }
 }
-
 @keyframes showBottomText {
   0% { transform: translate3d(0, -100%, 0); }
   100% { transform: translate3d(0, 0, 0); }
 }
 
+.hero{
+    display:flex;
+    justify-content:center;
+    gap:5%;
+}
+
+.text{
+ display:flex;
+}
+
+.text p{
+    color:#fff;
+    padding:30px;
+    width:50vw;
+    align-content:center;
+}
+.pic{
+    width:40vw;
+    border-radius:20px;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    height:100vh;
+    flex-wrap:wrap;
+}
 .animatedtitle {
   color: #fff;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   height: 90vmin;
   left: 50%;
-  position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%);
   width: 90vmin;
 }
-
-.animatedtitle > .texttop, 
-.animatedtitle > .textbottom {
+.animatedtitle > div {
   height: 50%;
   overflow: hidden;
-  position: absolute;
   width: 100%;
 }
-
-.texttop {
+.animatedtitle > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+}
+.animatedtitle > div div span {
+  display: block;
+}
+.animatedtitle > div.texttop {
   border-bottom: 1vmin solid #fff;
   top: 0;
 }
-
-.texttop > .innerText {
+.animatedtitle > div.texttop div {
   animation: showTopText 1s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
   bottom: 0;
-  font-size: 12vmin;
-  padding: 2vmin 0;
-  position: absolute;
   transform: translate(0, 100%);
 }
-
-.texttop > .innerText > .spanner {
-  color: #fff;
-  display: block;
+.animatedtitle > div.texttop div span:first-child {
+      color: #767676;
 }
-
-.texttop > .innerText > span {
-  display: block;
-}
-
-.textbottom {
+.animatedtitle > div.textbottom {
   bottom: 0;
 }
-
-.textbottom > .innerText {
+.animatedtitle > div.textbottom div {
   animation: showBottomText 0.5s;
   animation-delay: 1.75s;
   animation-fill-mode: forwards;
-  font-size: 12vmin;
-  padding: 2vmin 0;
-  position: absolute;
   top: 0;
   transform: translate(0, -100%);
 }
 
+@media (max-width: 1000px) {
+.hero{
+    flex-direction:column-reverse;
+    align-content:center;
+    flex-wrap:wrap
+}
+.text p{
+    width:80vw;
+}
+.pic{
+    width:60vw;
+}
+.picDiv{
+    display:flex;
+    justify-content:center;
+}
+}
