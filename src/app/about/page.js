@@ -93,7 +93,7 @@ const About = () => {
                         <div className="timeline-start md:text-end mb-10">
                             <time className="font-mono italic">2022-2026</time>
                             <div className="text-lg font-black"><Link style={{ color: "red" }} href="https://pes.edu/" target="_blank">PES University Electronic City</Link></div>
-                            Persuing B.Tech CSE at PES.<br />
+                            Pursuing B.Tech CSE at PES.<br />
                             Skills: Next.js · React.js · Data Structures · C (Programming Language) <br /> Python (Programming Language) · Algorithm Design ·  Node.js · HTML <br /> Cascading Style Sheets (CSS)
                         </div>
                         <hr />
