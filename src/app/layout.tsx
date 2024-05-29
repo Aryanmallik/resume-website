@@ -20,8 +20,11 @@ export default function RootLayout({
                             <link rel="icon" type="image/png" href="/img/LOgo.png" />
                             <div>{children}</div>
                             <div className="stars"> </div>
+                            <div className="stars-duplicate"> </div>
                             <div className="stars2"> </div>
+                            <div className="stars2-duplicate"> </div>
                             <div className="stars3"> </div>
+                            <div className="stars3-duplicate"> </div>
                         </body>
                     </html>
                     )

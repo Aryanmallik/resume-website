@@ -4,6 +4,7 @@ import ScrollDownArrow from "@/src/components/scroll";
 import Header from "@/src/components/header";
 import React, { useRef, useEffect } from 'react';
 import Link from "next/link";
+import Card from "@/src/components/card";
 const About = () => {
     const h1Ref = useRef(null);
 
@@ -99,10 +100,54 @@ const About = () => {
                     </li>
                 </ul>
             </div>
-            <div className={styles.projectContainer}>
+            <div className={styles.projects}>
                 <h1 ref={h1Ref}>
                     Projects
                 </h1>
+                <div className={styles.projectContainer}>
+                    <Card
+                        badge="Next.js"
+                        title="Portfolio website for Event company"
+                        footer="https://the-perfect-plan.vercel.app/"
+                        backContent="The Perfect Plan"
+                    />
+                    <Card
+                        badge="Next.js"
+                        title="Portfolio website for jewellery company"
+                        footer="https://avanea.vercel.app/"
+                        backContent="Avanea"
+                    />
+                    <Card
+                        badge="Next.js"
+                        title="Portfolio website for myslef"
+                        footer="https://aryan-mallik.vercel.app/"
+                        backContent="Resume (This Project)"
+                    />
+                    <Card
+                        badge="Html, CSS & Js"
+                        title="Rock paper scissor using html css and JS"
+                        footer="https://aryanmallik.github.io/rockpaperscissor/"
+                        backContent="Rock Paper Scissor"
+                    />
+                    <Card
+                        badge="Html, CSS & Js"
+                        title="SketchBoard using DOM manipulation"
+                        footer="https://github.com/Aryanmallik/sketchboard"
+                        backContent="SketchBoard"
+                    />
+                    <Card
+                        badge="Html, CSS & Js"
+                        title="Youtube video player using Google's API"
+                        footer="https://aryanmallik.github.io/youtube-player/"
+                        backContent="Youtube Video Player"
+                    />
+                    <Card
+                        badge="C"
+                        title="Checks for open ports between server and client"
+                        footer="https://github.com/Aryanmallik/sslPortScanner"
+                        backContent="IP Port Scanner"
+                    />
+                </div>
             </div>
         </>
     );

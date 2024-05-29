@@ -47,7 +47,7 @@
     flex-wrap:wrap;
 }
 
-.projectContainer h1 {
+.projects h1 {
   color: #fff;
   font-family: Arial, sans-serif;
   font-weight:900;
@@ -64,6 +64,17 @@
   transition: opacity 0.5s ease-in-out; 
   text-align:center;
 }
+
+.projectContainer{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-right:20vw;
+    margin-left:20vw;
+    margin-bottom:10px;
+}
+
 .education h1{
   color: #fff;
   font-family: Arial, sans-serif;

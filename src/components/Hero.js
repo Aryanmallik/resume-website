@@ -10,8 +10,8 @@ const Hero = () => {
                 <div className={styles.hero}>
                     <div className={styles.sidebarLeft}>
                         <ul className={styles.sidebarList}>
+                            <li><Link href="./about">About Me</Link></li>
                             <li><Link href="./photos">Photos</Link></li>
-                            <li><Link href="./about">About Me(Not ready)</Link></li>
                             <li><Link href="https://github.com/Aryanmallik">Github</Link></li>
                         </ul>
                     </div>
@@ -32,8 +32,8 @@ const Hero = () => {
                             </section>
                             <div className={styles.sidebarMobile}>
                                 <ul className={styles.sidebarList}>
+                                    <li><Link href="./about">About Me</Link></li>
                                     <li><Link href="./photos">Photos</Link></li>
-                                    <li><Link href="./about">About Me(Not ready)</Link></li>
                                     <li><Link href="https://github.com/Aryanmallik">Github</Link></li>
                                     <li><Link href="mailto:aryanmallik2004@gmail.com">Mail</Link></li>
                                     <li><Link href="https://linkedin.com/in/aryanmallikkk">LinkedIn</Link></li>
