@@ -14,7 +14,7 @@ export default function RootLayout({
             <head><meta name="google-site-verification" content="UHkTP1PKasHo-DdxCFLDFX6ENef_XUjgoVmavk0bMTg" />
             <meta property="og:title" content="Aryan"/>
                 <meta property="og:description" content="Explore My Portfolio: Discover My Projects, Photos, About Me, and Connect on Social MediaExplore My Portfolio: Discover My Projects, Photos, About Me, and Connect on Social Media"/>
-                        <meta property="og:image" content="./about1.jpg"/>
+                        <meta property="og:image" content="/about1.jpg"/>
                         </head>
                         <body>
                             <link rel="icon" type="image/png" href="/img/LOgo.png" />
