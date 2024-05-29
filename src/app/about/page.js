@@ -8,6 +8,7 @@ const About = () => {
     const h1Ref = useRef(null);
 
     useEffect(() => {
+        document.title = "About Me";
         const handleScroll = () => {
             if (window.scrollY >= 1398 && h1Ref.current) {
                 h1Ref.current.classList.add(styles.shine);

@@ -11,6 +11,7 @@ const Resume = () => {
     const [selectedImageUrl, setSelectedImageUrl] = useState(null);
 
     useEffect(() => {
+        document.title = "Photos";
         const fetchImages = async () => {
             try {
                 const response = await fetch(
