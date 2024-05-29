@@ -9,24 +9,6 @@ const About = () => {
 
     useEffect(() => {
         document.title = "About Me";
-        const ogTitle = "About Me";
-        const ogDescription = "Explore my experiences, achievements, and aspirations as I navigate through life's adventures.";
-        const ogImage = "./about1.jpg";
-
-        const existingOgTitle = document.querySelector('meta[property="og:title"]');
-        if (existingOgTitle) {
-            existingOgTitle.setAttribute('content', ogTitle);
-        }
-
-        const existingOgDescription = document.querySelector('meta[property="og:description"]');
-        if (existingOgDescription) {
-            existingOgDescription.setAttribute('content', ogDescription);
-        }
-
-        const existingOgImage = document.querySelector('meta[property="og:image"]');
-        if (existingOgImage) {
-            existingOgImage.setAttribute('content', ogImage);
-        }
         const handleScroll = () => {
             if (window.scrollY >= 1398 && h1Ref.current) {
                 h1Ref.current.classList.add(styles.shine);
