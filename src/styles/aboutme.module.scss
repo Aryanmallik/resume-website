@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
 @keyframes showTopText {
   0% { transform: translate3d(0, 100%, 0); }
   40%, 60% { transform: translate3d(0, 50%, 0); }
@@ -8,11 +9,19 @@
   0% { transform: translate3d(0, -100%, 0); }
   100% { transform: translate3d(0, 0, 0); }
 }
+.textbottom .innerText{
+    display:flex;
+}
+
+.textbottom .innerText p{
+    margin-right: 16px;
+}
 
 .hero{
     display:flex;
     justify-content:center;
     gap:5%;
+    margin-bottom:7rem;
 }
 
 .text{
@@ -26,7 +35,7 @@
     align-content:center;
 }
 .pic{
-    width:40vw;
+    width:30vw;
     border-radius:20px;
 }
 
@@ -37,6 +46,47 @@
     height:100vh;
     flex-wrap:wrap;
 }
+
+.projectContainer h1 {
+  color: #fff;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10vmin;
+  background: linear-gradient(90deg, #fff, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  position: relative;
+  opacity: 0; 
+  transition: opacity 0.5s ease-in-out; 
+  text-align:center;
+}
+.education h1{
+  color: #fff;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10vmin;
+  text-align:center;
+  }
+  .education{
+      margin-bottom:10rem;
+  }
+
+.shine {
+  opacity: 1; 
+  animation: shine 5s linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -200%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+
 .animatedtitle {
   color: #fff;
   font-family: Roboto, Arial, sans-serif;
@@ -99,3 +149,4 @@
     justify-content:center;
 }
 }
+
