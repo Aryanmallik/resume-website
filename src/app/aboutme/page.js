@@ -79,7 +79,7 @@ const About = () => {
       <div className="text-lg font-black"><Link style={{ color:"red"}}target="_blank" href="https://south.dpsbangalore.edu.in/">Delhi Public School</Link></div>
         Completed my upper secondary education at DPS<br/> 
         PCMC<br/>
-        Skills: Python·  SQL · C (basics)
+        Skills: Python ·  SQL · C (basics)
     </div>
     <hr />
   </li>
