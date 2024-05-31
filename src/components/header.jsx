@@ -36,7 +36,7 @@ export default function Header() {
                                     aria-label="close sidebar"
                                     className="drawer-overlay"
                                 ></label>
-                                <ul className="menu p-4 w-80 min-h-full text-base-content">
+                                <ul className="menu p-4 w-80 z-[30] min-h-full text-base-content">
                                     <br />
                                     <br />
                                     <br />
@@ -44,7 +44,7 @@ export default function Header() {
                                         <Link href={"./"}>Home</Link>
                                     </li>
                                     <li>
-                                        <Link href={"./aboutme"}>About Me</Link>
+                                        <Link href={"./about"}>About Me</Link>
                                     </li>
                                     <li>
                                         <Link href={"./photos"}>Photos</Link>

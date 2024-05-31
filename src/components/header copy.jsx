@@ -1,34 +1,44 @@
 import Link from "next/link";
 import Image from "next/image";
-export default function Header() {
-    return <>
-        <nav id="heads">
-            <div>
-                <div className="navbar bg-black max-w-full">
-                    <div className="flex-none">
-                        <div className=" drawer">
-                            <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-                            <div className="drawer-content">
-                                <label htmlFor="my-drawer" className="btn btn-square btn-ghost drawer-button"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></label>
-                            </div>
-                            <div className="drawer-side">
-                                <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-                                <ul className="menu p-4 w-80 min-h-full text-base-content">
-                                    <br /><br /><br />
-                                    <li><Link href={"./"}>Home</Link></li>
-                                    <li><Link href={"./photos"}>Photos</Link></li>
-                                </ul>
-                            </div>
+import styles from "@/src/styles/header.module.css"
+export default function Header1() {
+    return (
+        <>
+            <div className="navbar bg-base-100">
+                <div className="navbar-start">
+                    <div className="dropdown dropdown-hover">
+                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                         </div>
-                    </div>
-                    <div className="navbar justify-center">
-                        <Link href="/" >
-                            <p ><Image src={'/logo.png'} width={825} height={302} alt='' style={{ height: "3.9rem", width: "6.5rem" }}></Image></p>
-                        </Link>
+                        <ul tabIndex={0} className={`${styles.ulu} menu menu-sm dropdown-content  z-[20] p-2 shadow bg-base-100 rounded-box w-52`}>
+                                    <li>
+                                        <Link href={"./"}>Home</Link>
+                                    </li>
+                                    <li>
+                                        <Link href={"./about"}>About Me</Link>
+                                    </li>
+                                    <li>
+                                        <Link href={"./photos"}>Photos</Link>
+                                    </li>
+                        </ul>
                     </div>
                 </div>
+                <div className="navbar-center">
+                        <Link href="/">
+                            <p>
+                                <Image
+                                    src={"/logo.png"}
+                                    width={825}
+                                    height={302}
+                                    alt=""
+                                    style={{ height: "3.9rem", width: "6.5rem" }}
+                                ></Image>
+                            </p>
+                        </Link>
+                </div>
+                <div className="navbar-end">
+                </div>
             </div>
-
-        </nav>
-    </>
+        </>
+    );
 }

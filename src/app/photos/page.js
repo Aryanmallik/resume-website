@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Footer from "../../components/footer";
-import Header from "../../components/header";
+import Header1 from "../../components/header copy";
 
 const Resume = () => {
     const [beachImages, setBeachImages] = useState([]);
@@ -63,7 +63,7 @@ const Resume = () => {
 
     return (
         <div>
-        <Header />
+        <Header1/>
         <div className="bg-black">
         <h1 className="font-bold text-white">Beaches</h1>
         <div className="carousel carousel-center p-4 max-w-full space-x-5 rounded-box">

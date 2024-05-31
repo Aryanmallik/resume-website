@@ -1,7 +1,10 @@
-.navbar {
-        color: #fff;
-        text-align: center;
-        /* display: flex; 
-       justify-content: center; */   
-       }
+.ulu li:hover{
+    color:red;
+    trasition:0.3s ease;
+}
+
+.ulu li{
+font-size:28px;
+font-weight:900;
     
+}

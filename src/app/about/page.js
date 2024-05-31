@@ -2,6 +2,7 @@
 import styles from "@/src/styles/aboutme.module.scss";
 import ScrollDownArrow from "@/src/components/scroll";
 import Header from "@/src/components/header";
+import Header1 from "@/src/components/header copy";
 import React, { useRef, useEffect } from 'react';
 import Link from "next/link";
 import Card from "@/src/components/card";
@@ -29,7 +30,7 @@ const About = () => {
     }, []);
     return (
         <>
-            <Header />
+            <Header1 />
             <div className={styles.container}>
                 <div className={styles.animatedtitle}>
                     <div className={styles.texttop}>
