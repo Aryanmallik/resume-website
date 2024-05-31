@@ -29,14 +29,20 @@
 }
 
 .text p{
+    font-size:1.2rem;
     color:#fff;
     padding:30px;
     width:50vw;
     align-content:center;
 }
 .pic{
-    width:30vw;
+    width:35vw;
     border-radius:20px;
+}
+.picDiv{
+    display:flex;
+    align-content:center;
+    flex-wrap:wrap;
 }
 
 .container{
@@ -65,16 +71,15 @@
   text-align:center;
 }
 
-.projectContainer{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-right:20vw;
-    margin-left:20vw;
-    margin-bottom:10px;
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
-
 .education h1{
   color: #fff;
   font-family: Arial, sans-serif;
@@ -154,6 +159,7 @@
 }
 .text p{
     width:80vw;
+    font-size:1rem;
 }
 .pic{
     width:80vw;
