@@ -9,7 +9,7 @@ font-weight:500;
     
 }
 .sticky {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000; 
     background-color: var(--base-100); 
