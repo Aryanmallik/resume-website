@@ -141,7 +141,23 @@
   height: 30px;
   animation-delay: -1800ms;
 }
+.bottom {
+  background-color: #ff8866;
+  left: 50px;
+  top: 60px;
+  width: 150px;
+  height: 150px;
+  animation-delay: -800ms;
+}
 
+.right {
+  background-color: #ff2233;
+  left: 160px;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  animation-delay: -1800ms;
+  }
 @keyframes floating {
   0% {
     transform: translateY(0px);
