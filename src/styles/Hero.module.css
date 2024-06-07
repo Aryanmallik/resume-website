@@ -16,31 +16,18 @@
 .hero__bg,
 .hero__cnt {
   align-self: center;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  position:relative;
+  z-index:11;
 }
 
 .hero__bg {
-  display: grid;
-  position: relative;
+  position: absolute;
   z-index: 10;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   place-items: center;
   animation: fade-in 0.75s linear forwards;
   will-change: opacity;
 }
 
-.hero__bg::before {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: 5;
-  top: -10%;
-  right: -10%;
-  bottom: -10%;
-  left: -10%;
-}
 
 .hero__bg picture {
   display: flex;
