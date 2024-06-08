@@ -46,7 +46,6 @@
 }
 
 .hero__cnt {
-  display: grid;
   position: relative;
   place-items: center;
   z-index: 20;

@@ -52,6 +52,10 @@ const Resume = () => {
     };
 
     fetchImages();
+      document.body.classList.add(styles.hiddenOverflow);
+      return () => {
+          document.body.classList.remove(styles.hiddenOverflow);
+      };
   }, []);
 
   const openModal = (imageUrl) => {
