@@ -28,7 +28,7 @@ const Resume = () => {
         const nightSkyImagesData = [];
         data.forEach((image) => {
           if (image && image.name && image.id) {
-            const imageUrl = `https://drive.lienuc.com/uc?id=${image.id}`;
+                        const imageUrl = `https://lh3.googleusercontent.com/d/${image.id}=s4000?authuser=0`; 
             if (image.name.toLowerCase().includes("beach")) {
               beachImagesData.push({ name: image.name, url: imageUrl });
             } else if (image.name.toLowerCase().includes("concert")) {
