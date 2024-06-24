@@ -53,6 +53,25 @@
     flex-wrap:wrap;
 }
 
+.skill{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:5%;
+}
+.skillcontain{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    width:60%
+}
+.skill p{
+
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-weight:900;
+  font-size: 6vmin;
+}
 .projects h1 {
   color: #fff;
   font-family: Arial, sans-serif;
@@ -88,7 +107,7 @@
   font-weight:900;
   }
   .education{
-      margin-bottom:10rem;
+      margin-bottom:4rem;
   }
 
 .shine {
@@ -167,6 +186,9 @@
 .picDiv{
     display:flex;
     justify-content:center;
+}
+.skillcontain{
+    width:100%
 }
 }
 

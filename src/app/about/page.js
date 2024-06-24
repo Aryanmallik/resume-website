@@ -6,6 +6,7 @@ import Header1 from "@/src/components/header copy";
 import React, { useRef, useEffect } from 'react';
 import Link from "next/link";
 import Card from "@/src/components/card";
+import Skill from "@/src/components/skill";
 const About = () => {
     const h1Ref = useRef(null);
 
@@ -100,6 +101,22 @@ const About = () => {
                         <hr />
                     </li>
                 </ul>
+            </div>
+            <div className={styles.skill}>
+        <p>My Skills</p>
+                <div className={styles.skillcontain}>
+        <Skill name="Html"/>
+        <Skill name="Css"/>
+        <Skill name="Javascript"/>
+        <Skill name="C Programming"/>
+        <Skill name="Next.js"/>
+        <Skill name="React.js"/>
+        <Skill name="Python"/>
+        <Skill name="Photography"/>
+        <Skill name="Node.js"/>
+        <Skill name="DBMS"/>
+        <Skill name="Version control"/>
+                </div>
             </div>
             <div className={styles.projects}>
                 <h1 ref={h1Ref}>
