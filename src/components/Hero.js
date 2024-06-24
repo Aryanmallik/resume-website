@@ -12,7 +12,7 @@ const Hero = () => {
                         <ul className={styles.sidebarList}>
                             <li><Link href="./about">About Me</Link></li>
                             <li><Link href="./photos">Photos</Link></li>
-                            <li><Link href="https://github.com/Aryanmallik">Github</Link></li>
+                            <li><Link href="https://drive.google.com/file/d/1fTCXsjW9hclzEkfr7SpJv7G5IylsMrBF/view?usp=drive_link" download target="_blank">My resume</Link></li>
                         </ul>
                     </div>
 
@@ -34,10 +34,10 @@ const Hero = () => {
                                 <ul className={styles.sidebarList}>
                                     <li><Link href="./about">About Me</Link></li>
                                     <li><Link href="./photos">Photos</Link></li>
-                                    <li><Link href="https://github.com/Aryanmallik">Github</Link></li>
-                                    <li><Link href="mailto:aryanmallik2004@gmail.com">Mail</Link></li>
-                                    <li><Link href="https://linkedin.com/in/aryanmallikkk">LinkedIn</Link></li>
-                                    <li><Link href="tel:+919686629493">Phone</Link></li>
+                                    <li><Link href="https://drive.google.com/file/d/1fTCXsjW9hclzEkfr7SpJv7G5IylsMrBF/view?usp=drive_link" target="_blank" download>My resume</Link></li>
+                                    <li><Link href="https://github.com/Aryanmallik" target="_blank">Github</Link></li>
+                                    <li><Link href="mailto:aryanmallik2004@gmail.com" target="_blank">Mail</Link></li>
+                                    <li><Link href="https://linkedin.com/in/aryanmallikkk" target="_blank">LinkedIn</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -45,9 +45,9 @@ const Hero = () => {
 
                     <div className={styles.sidebarRight}>
                         <ul className={styles.sidebarList}>
-                            <li><Link href="mailto:aryanmallik2004@gmail.com">Mail</Link></li>
-                            <li><Link href="https://linkedin.com/in/aryanmallikkk">LinkedIn</Link></li>
-                            <li><Link href="tel:+919686629493">Phone</Link></li>
+                            <li><Link href="https://github.com/Aryanmallik" target="_blank">Github</Link></li>
+                            <li><Link href="mailto:aryanmallik2004@gmail.com" target="_blank">Mail</Link></li>
+                            <li><Link href="https://linkedin.com/in/aryanmallikkk" target="_blank">LinkedIn</Link></li>
                         </ul>
                     </div>
                 </div>
