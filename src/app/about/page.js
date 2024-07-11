@@ -150,7 +150,7 @@ const About = () => {
                     <Card
                         badge="Html, CSS & Js"
                         title="SketchBoard using DOM manipulation"
-                        footer="https://github.com/Aryanmallik/sketchboard"
+                        footer="https://aryanmallik.github.io/sketchboard/"
                         backContent="SketchBoard"
                     />
                     <Card
