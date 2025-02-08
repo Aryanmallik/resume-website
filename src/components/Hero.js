@@ -1,5 +1,6 @@
 'use client'
 import styles from '../styles/Hero.module.css';
+import MoonScene from "./3js1.jsx";
 import Link from 'next/link';
 import React from 'react';
 const Hero = () => {
@@ -18,7 +19,7 @@ const Hero = () => {
 
                     <div className={styles.hero__bg}>
                         <picture>
-                            <img src="20.png" alt="Hero Background" />
+                            <MoonScene/>
                         </picture>
                     </div>
 
@@ -27,10 +28,12 @@ const Hero = () => {
                             <p className={styles.text}>Hello! I'm</p>
                             <section className={styles.animation}>
                                 <div className={styles.first}><div>Aryan</div></div>
-                                <div className={styles.second}><div>Web Developer</div></div>
-                                <div className={styles.third}><div>Photographer</div></div>
+                                <div className={styles.second}><div>a Web Developer</div></div>
+                                <div className={styles.third}><div>and a Photographer</div></div>
                             </section>
                             <div className={styles.sidebarMobile}>
+                                <picture>
+                                </picture>
                                 <ul className={styles.sidebarList}>
                                     <li><Link href="./about">About Me</Link></li>
                                     <li><Link href="./photos">Photos</Link></li>

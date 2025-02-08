@@ -13,11 +13,14 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
+    "@react-three/drei": "^9.121.4",
+    "@react-three/fiber": "^8.17.14",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
     "react-router-dom": "^6.16.0",
-    "sass": "^1.77.2"
+    "sass": "^1.77.2",
+    "three": "^0.173.0"
   },
   "devDependencies": {
     "@types/node": "^20",

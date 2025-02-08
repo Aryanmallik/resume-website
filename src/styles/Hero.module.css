@@ -33,8 +33,6 @@
   display: flex;
   height: var(--hero-height);
   width: var(--hero-width);
-  animation: scaling-hero-anim 8s 0.25s cubic-bezier(0.4, 0, 0.2, 1) forwards infinite;
-  will-change: transform;
   z-index: 10;
 }
 
