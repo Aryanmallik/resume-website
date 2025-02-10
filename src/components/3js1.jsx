@@ -29,7 +29,7 @@ function Moon() {
         displacementMap={displacementMap} 
         displacementScale={0}
         bumpMap={displacementMap} 
-        bumpScale={7.04} 
+        bumpScale={2.54} 
         reflectivity={0} 
         shininess={0} 
       />
@@ -40,7 +40,7 @@ function Moon() {
 const MoonScene=()=> {
   return (
     <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
-      <directionalLight position={[-100, 10, 50]} intensity={1} />
+      <directionalLight position={[-100, 10, 50]} intensity={2} />
       <hemisphereLight color={0xffffff} groundColor={0xffffff} intensity={0.1} />
       <OrbitControls enablePan={false} />
       <Moon />
