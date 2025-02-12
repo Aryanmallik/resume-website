@@ -13,26 +13,34 @@ const cycle = 29.53;
 const newMoon = new Date(2025, 1, 28);
 
 const getMoonPhase = () => {
-    const today = new Date();
+    const today = new Date(2025,2,23);
     const diff = Math.abs(today - newMoon) / (1000 * 60 * 60 * 24);
     console.log(diff)
     const cyclePosition = (diff % cycle) / cycle;
     console.log("cycle", cyclePosition)
     let min = Infinity;
     let minimum;
-    if (Math.abs(cyclePosition - 0.25) < min) {
-        minimum = "First Quarter";
-        min = cyclePosition - 0.25;
+    if (Math.abs(cyclePosition - 0.166) < min) {
+        minimum = "Waxing Crescent";
+        min = cyclePosition - 0.1666;
+    }
+    if (Math.abs(cyclePosition - 0.333) < min) {
+        minimum = "Waxing Gibbous";
+        min = cyclePosition - 0.333;
     }
     if (Math.abs(cyclePosition - 0.5) < min) {
         minimum = "Full Moon";
         min = cyclePosition - 0.5;
     }
-    if (Math.abs(cyclePosition - 0.75) < min) {
-        minimum = "Third Quarter";
-        min = cyclePosition - 0.75;
+    if (Math.abs(cyclePosition - .6666) < min) {
+        minimum = "Waning gibbous";
+        min = cyclePosition - 0.6666;
     }
-    if (Math.abs(cyclePosition - 0.1) < min) {
+    if (Math.abs(cyclePosition - .833333) < min) {
+        minimum = "Waning Crescent";
+        min = cyclePosition - .83333;
+    }
+    if (Math.abs(cyclePosition - 1) < min) {
         minimum = "New Moon";
     }
     return minimum;
@@ -75,9 +83,11 @@ const MoonScene = () => {
         <div className="moon">
             <Canvas camera={{ position: [0, 0, 7], fov: 75 }} >
                 {phase === "Full Moon" && <directionalLight position={[0, 0, 5]} intensity={1.5} />}
+                {phase === "Waning Crescent" && <directionalLight position={[-100, 0, -50]} intensity={4.5} />}
+                {phase === "Waxing Crescent" && <directionalLight position={[100, 0, -50]} intensity={4.5} />}
                 {phase === "New Moon" && <ambientLight intensity={0.2} />}
-                {phase === "First Quarter" && <directionalLight position={[150, 0, 20]} intensity={1.5} />}
-                {phase === "Third Quarter" && <directionalLight position={[-150, 0, 40]} intensity={1.5} />}
+                {phase === "Waxing Gibbous" && <directionalLight position={[150, 0, 20]} intensity={1.5} />}
+                {phase === "Waning gibbous" && <directionalLight position={[-150, 0, 40]} intensity={1.5} />}
 
                 <hemisphereLight color={0xffffff} groundColor={0xffffff} intensity={0.1} />
                 <OrbitControls enablePan={false} />
