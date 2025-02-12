@@ -4,47 +4,22 @@ import { useState, useEffect, useRef } from "react";
 import { Canvas, useLoader, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import * as THREE from "three";
-import styles from '../styles/Moon.module.css';
+import styles from "../styles/Moon.module.css";
 import "./moon.css";
+
 const textureURL = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/lroc_color_poles_1k.jpg";
 const displacementURL = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/ldem_3_8bit.jpg";
 
-const cycle = 29.53;
-const newMoon = new Date(2025, 1, 28);
-
-const getMoonPhase = () => {
-    const today = new Date(2025,2,23);
-    const diff = Math.abs(today - newMoon) / (1000 * 60 * 60 * 24);
-    console.log(diff)
-    const cyclePosition = (diff % cycle) / cycle;
-    console.log("cycle", cyclePosition)
-    let min = Infinity;
-    let minimum;
-    if (Math.abs(cyclePosition - 0.166) < min) {
-        minimum = "Waxing Crescent";
-        min = cyclePosition - 0.1666;
+async function fetchMoonPhase() {
+    try {
+        const response = await fetch("https://api.ipgeolocation.io/astronomy?apiKey=a1d7bb8a691b4b2ca931b938da1b4df2");
+        const data = await response.json();
+        return data.moon_phase;
+    } catch (error) {
+        console.error("Error fetching moon phase:", error);
+        return "Unknown";
     }
-    if (Math.abs(cyclePosition - 0.333) < min) {
-        minimum = "Waxing Gibbous";
-        min = cyclePosition - 0.333;
-    }
-    if (Math.abs(cyclePosition - 0.5) < min) {
-        minimum = "Full Moon";
-        min = cyclePosition - 0.5;
-    }
-    if (Math.abs(cyclePosition - .6666) < min) {
-        minimum = "Waning gibbous";
-        min = cyclePosition - 0.6666;
-    }
-    if (Math.abs(cyclePosition - .833333) < min) {
-        minimum = "Waning Crescent";
-        min = cyclePosition - .83333;
-    }
-    if (Math.abs(cyclePosition - 1) < min) {
-        minimum = "New Moon";
-    }
-    return minimum;
-};
+}
 
 function Moon({ phase }) {
     const texture = useLoader(THREE.TextureLoader, textureURL);
@@ -73,21 +48,23 @@ function Moon({ phase }) {
 }
 
 const MoonScene = () => {
-    const [phase, setPhase] = useState("New Moon");
+    const [phase, setPhase] = useState("Loading...");
 
     useEffect(() => {
-        setPhase(getMoonPhase());
+        fetchMoonPhase().then(setPhase);
     }, []);
 
     return (
         <div className="moon">
-            <Canvas camera={{ position: [0, 0, 7], fov: 75 }} >
-                {phase === "Full Moon" && <directionalLight position={[0, 0, 5]} intensity={1.5} />}
-                {phase === "Waning Crescent" && <directionalLight position={[-100, 0, -50]} intensity={4.5} />}
-                {phase === "Waxing Crescent" && <directionalLight position={[100, 0, -50]} intensity={4.5} />}
-                {phase === "New Moon" && <ambientLight intensity={0.2} />}
-                {phase === "Waxing Gibbous" && <directionalLight position={[150, 0, 20]} intensity={1.5} />}
-                {phase === "Waning gibbous" && <directionalLight position={[-150, 0, 40]} intensity={1.5} />}
+            <Canvas camera={{ position: [0, 0, 7], fov: 75 }}>
+                {phase === "FULL_MOON" && <directionalLight position={[0, 0, 5]} intensity={1.5} />}
+                {phase === "WANING_CRESCENT" && <directionalLight position={[-100, 0, -50]} intensity={4.5} />}
+                {phase === "WAXING_CRESCENT" && <directionalLight position={[100, 0, -50]} intensity={4.5} />}
+                {phase === "NEW_MOON" && <ambientLight intensity={0.2} />}
+                {phase === "WAXING_GIBBOUS" && <directionalLight position={[100, 0, 50]} intensity={1.5} />}
+                {phase === "WANING_GIBBOUS" && <directionalLight position={[-100, 0, 50]} intensity={1.5} />}
+                {phase === "FIRST_QUARTER" && <directionalLight position={[60, 0, 5]} intensity={2.9} />}
+                {phase === "LAST_QUARTER" && <directionalLight position={[-60, 0, 5]} intensity={2.9} />}
 
                 <hemisphereLight color={0xffffff} groundColor={0xffffff} intensity={0.1} />
                 <OrbitControls enablePan={false} />
