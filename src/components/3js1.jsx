@@ -22,15 +22,15 @@ const getMoonPhase = () => {
     let minimum;
     if (Math.abs(cyclePosition - 0.25) < min) {
         minimum = "First Quarter";
-        min = cyclePosition-0.25;
+        min = cyclePosition - 0.25;
     }
     if (Math.abs(cyclePosition - 0.5) < min) {
         minimum = "Full Moon";
-        min = cyclePosition-0.5;
+        min = cyclePosition - 0.5;
     }
     if (Math.abs(cyclePosition - 0.75) < min) {
         minimum = "Third Quarter";
-        min = cyclePosition-0.75;
+        min = cyclePosition - 0.75;
     }
     if (Math.abs(cyclePosition - 0.1) < min) {
         minimum = "New Moon";
