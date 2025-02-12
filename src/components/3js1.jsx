@@ -9,27 +9,33 @@ import "./moon.css";
 const textureURL = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/lroc_color_poles_1k.jpg";
 const displacementURL = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/ldem_3_8bit.jpg";
 
-const moonPhases = [
-    { name: "New Moon", date: new Date(2025, 1, 28) },
-    { name: "First Quarter", date: new Date(2025, 1, 5) },
-    { name: "Full Moon", date: new Date(2025, 1, 12) },
-    { name: "Third Quarter", date: new Date(2025, 1, 20) }
-];
+const cycle = 29.53;
+const newMoon = new Date(2025, 1, 28);
 
 const getMoonPhase = () => {
     const today = new Date();
-    let closestPhase = "";
-    let minDiff = Infinity;
-
-    for (const phase of moonPhases) {
-        const diff = Math.abs(today - phase.date);
-        if (diff < minDiff) {
-            minDiff = diff;
-            closestPhase = phase.name;
-        }
+    const diff = Math.abs(today - newMoon) / (1000 * 60 * 60 * 24);
+    console.log(diff)
+    const cyclePosition = (diff % cycle) / cycle;
+    console.log("cycle", cyclePosition)
+    let min = Infinity;
+    let minimum;
+    if (Math.abs(cyclePosition - 0.25) < min) {
+        minimum = "First Quarter";
+        min = cyclePosition-0.25;
     }
-
-    return closestPhase;
+    if (Math.abs(cyclePosition - 0.5) < min) {
+        minimum = "Full Moon";
+        min = cyclePosition-0.5;
+    }
+    if (Math.abs(cyclePosition - 0.75) < min) {
+        minimum = "Third Quarter";
+        min = cyclePosition-0.75;
+    }
+    if (Math.abs(cyclePosition - 0.1) < min) {
+        minimum = "New Moon";
+    }
+    return minimum;
 };
 
 function Moon({ phase }) {
