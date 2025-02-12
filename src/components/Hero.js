@@ -19,7 +19,7 @@ const Hero = () => {
 
                     <div className={styles.hero__bg}>
                         <picture>
-                            <MoonScene/>
+                            <MoonScene />
                         </picture>
                     </div>
 

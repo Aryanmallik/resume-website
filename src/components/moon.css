@@ -1,0 +1,14 @@
+body{
+    position:absolute;
+}
+.moon{
+    position:relative;
+    width:100vw;
+}
+.text{
+    position:absolute;
+    top:2%;
+    right:0;
+    font-weight:500;
+    z-index:10;
+}

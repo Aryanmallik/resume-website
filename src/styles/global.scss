@@ -27,27 +27,6 @@ html {
     height: 100%;
 }
 
-.progress {
-    position: fixed;
-    top: 3rem;
-    left: 3rem;
-    width: 3rem;
-    height: auto;
-    fill: currentColor;
-    z-index: 1;
-    offset-path: path('M.5 122.7s24.7-275 276.9 0c327.1 356.7 266.1-330.3 548-33.3 256.9 270.7 271.1 0 271.1 0');
-    animation: move auto linear;
-    animation-timeline: scroll(root);
-}
-
-@keyframes move {
-    0% {
-        offset-distance: 0%;
-    }
-    100% {
-        offset-distance: 100%;
-    }
-}
 
 @function multiple-box-shadow($n) {
     $value: '#{random(2000)}px #{random(2000)}px #FFF';
