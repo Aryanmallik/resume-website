@@ -7,8 +7,10 @@ import * as THREE from "three";
 import styles from "../styles/Moon.module.css";
 import "./moon.css";
 
-const textureURL = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/lroc_color_poles_1k.jpg";
-const displacementURL = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/17271/ldem_3_8bit.jpg";
+// const textureURL = "texture.jpg";
+// const displacementURL = "displacement.jpg";
+const textureURL = "a2.jpg";
+const displacementURL = "a2.jpg";
 
 async function fetchMoonPhase() {
     try {
@@ -28,7 +30,7 @@ function Moon({ phase }) {
 
     useFrame(() => {
         if (moonRef.current) {
-            moonRef.current.rotation.y += 0.001;
+            moonRef.current.rotation.y += 0.0;
         }
     });
 
@@ -38,7 +40,7 @@ function Moon({ phase }) {
             <meshPhongMaterial
                 map={texture}
                 displacementMap={displacementMap}
-                displacementScale={0}
+                displacementScale={1}
                 bumpMap={displacementMap}
                 bumpScale={2.5}
                 shininess={phase === "Full Moon" ? 10 : 0}
@@ -54,6 +56,7 @@ const MoonScene = () => {
         fetchMoonPhase().then(setPhase);
     }, []);
 
+
     return (
         <div className="moon">
             <Canvas camera={{ position: [0, 0, 7], fov: 75 }}>
@@ -67,7 +70,7 @@ const MoonScene = () => {
                 {phase === "LAST_QUARTER" && <directionalLight position={[-60, 0, 5]} intensity={2.9} />}
 
                 <hemisphereLight color={0xffffff} groundColor={0xffffff} intensity={0.1} />
-                <OrbitControls enablePan={false} />
+                <OrbitControls enablePan={true} />
                 <Moon phase={phase} />
             </Canvas>
             <p className="text">Current phase: {phase}</p>
