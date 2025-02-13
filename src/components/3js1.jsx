@@ -17,7 +17,7 @@ async function fetchMoonPhase() {
         return data.moon_phase;
     } catch (error) {
         console.error("Error fetching moon phase:", error);
-        return "Unknown";
+        return "FULL_MOON";
     }
 }
 
