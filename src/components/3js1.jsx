@@ -30,7 +30,7 @@ function Moon({ phase }) {
 
     useFrame(() => {
         if (moonRef.current) {
-            moonRef.current.rotation.y += 0.0;
+            moonRef.current.rotation.y += 0.01;
         }
     });
 
