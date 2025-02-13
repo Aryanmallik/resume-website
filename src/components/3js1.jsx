@@ -60,7 +60,7 @@ const MoonScene = () => {
     return (
         <div className="moon">
             <Canvas camera={{ position: [0, 0, 7], fov: 75 }}>
-                {phase === "FULL_MOON" && <directionalLight position={[0, 0, 5]} intensity={1.5} />}
+                {phase === "FULL_MOON" && <ambientLight position={[0, 0, 5]} intensity={1.5} />}
                 {phase === "WANING_CRESCENT" && <directionalLight position={[-100, 0, -50]} intensity={4.5} />}
                 {phase === "WAXING_CRESCENT" && <directionalLight position={[100, 0, -50]} intensity={4.5} />}
                 {phase === "NEW_MOON" && <ambientLight intensity={0.2} />}
