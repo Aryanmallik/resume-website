@@ -7,10 +7,10 @@ import * as THREE from "three";
 import styles from "../styles/Moon.module.css";
 import "./moon.css";
 
-// const textureURL = "texture.jpg";
-// const displacementURL = "displacement.jpg";
-const textureURL = "a2.jpg";
-const displacementURL = "a2.jpg";
+const textureURL = "texture.jpg";
+const displacementURL = "displacement.jpg";
+// const textureURL = "a2.jpg";
+// const displacementURL = "a2.jpg";
 
 async function fetchMoonPhase() {
     try {
@@ -30,7 +30,7 @@ function Moon({ phase }) {
 
     useFrame(() => {
         if (moonRef.current) {
-            moonRef.current.rotation.y += 0.01;
+            moonRef.current.rotation.y += 0.001;
         }
     });
 
@@ -40,9 +40,9 @@ function Moon({ phase }) {
             <meshPhongMaterial
                 map={texture}
                 displacementMap={displacementMap}
-                displacementScale={1}
+                displacementScale={0}
                 bumpMap={displacementMap}
-                bumpScale={2.5}
+                bumpScale={7.5}
                 shininess={phase === "Full Moon" ? 10 : 0}
             />
         </mesh>
@@ -60,7 +60,7 @@ const MoonScene = () => {
     return (
         <div className="moon">
             <Canvas camera={{ position: [0, 0, 7], fov: 75 }}>
-                {phase === "FULL_MOON" && <ambientLight position={[0, 0, 5]} intensity={1.5} />}
+                {phase === "FULL_MOON" && <directionalLight position={[0, 0, 5]} intensity={1.5} />}
                 {phase === "WANING_CRESCENT" && <directionalLight position={[-100, 0, -50]} intensity={4.5} />}
                 {phase === "WAXING_CRESCENT" && <directionalLight position={[100, 0, -50]} intensity={4.5} />}
                 {phase === "NEW_MOON" && <ambientLight intensity={0.2} />}
