@@ -42,7 +42,7 @@ function Moon({ phase }) {
                 displacementMap={displacementMap}
                 displacementScale={0}
                 bumpMap={displacementMap}
-                bumpScale={7.5}
+                bumpScale={2.5}
                 shininess={phase === "Full Moon" ? 10 : 0}
             />
         </mesh>
