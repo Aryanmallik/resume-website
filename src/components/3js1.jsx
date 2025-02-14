@@ -43,7 +43,7 @@ function Moon({ phase }) {
                 displacementScale={0}
                 bumpMap={displacementMap}
                 bumpScale={2.5}
-                shininess={phase === "Full Moon" ? 10 : 0}
+                shininess={phase === "FULL_MOON" ? 10: 0}
             />
         </mesh>
     );
@@ -59,7 +59,7 @@ const MoonScene = () => {
 
     return (
         <div className="moon">
-            <Canvas camera={{ position: [0, 0, 7], fov: 75 }}>
+            <Canvas camera={{ position: [0, 0, 6], fov: 75 }}>
                 {phase === "FULL_MOON" && <directionalLight position={[0, 0, 5]} intensity={1.5} />}
                 {phase === "WANING_CRESCENT" && <directionalLight position={[-100, 0, -50]} intensity={4.5} />}
                 {phase === "WAXING_CRESCENT" && <directionalLight position={[100, 0, -50]} intensity={4.5} />}
