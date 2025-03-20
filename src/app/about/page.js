@@ -103,19 +103,19 @@ const About = () => {
                 </ul>
             </div>
             <div className={styles.skill}>
-        <p>My Skills</p>
+                <p>My Skills</p>
                 <div className={styles.skillcontain}>
-        <Skill name="Html"/>
-        <Skill name="Css"/>
-        <Skill name="Javascript"/>
-        <Skill name="C Programming"/>
-        <Skill name="Next.js"/>
-        <Skill name="React.js"/>
-        <Skill name="Python"/>
-        <Skill name="Photography"/>
-        <Skill name="Node.js"/>
-        <Skill name="DBMS"/>
-        <Skill name="Version control"/>
+                    <Skill name="Html" />
+                    <Skill name="Css" />
+                    <Skill name="Javascript" />
+                    <Skill name="C Programming" />
+                    <Skill name="Next.js" />
+                    <Skill name="React.js" />
+                    <Skill name="Python" />
+                    <Skill name="Photography" />
+                    <Skill name="Node.js" />
+                    <Skill name="DBMS" />
+                    <Skill name="Version control" />
                 </div>
             </div>
             <div className={styles.projects}>
@@ -124,10 +124,22 @@ const About = () => {
                 </h1>
                 <div className={styles.projectContainer}>
                     <Card
+                        badge="OpenCL"
+                        title="Survival of the fittest cellular automata simulation"
+                        footer="https://github.com/Aryanmallik/Rock-Paper-Scissors-Cellular-Automata-Simulation"
+                        backContent="Cellular automata"
+                    />
+                    <Card
+                        badge="Big data"
+                        title="Emoji Broadcast over Event-Driven Architecture"
+                        footer="https://github.com/mokshablr/Emostream"
+                        backContent="Emostream"
+                    />
+                    <Card
                         badge="Next.js"
-                        title="Portfolio website for Event company"
-                        footer="https://the-perfect-plan.vercel.app/"
-                        backContent="The Perfect Plan"
+                        title="Personal portfolio website"
+                        footer="https://aryan-mallik.vercel.app/"
+                        backContent="Resume (This Project)"
                     />
                     <Card
                         badge="Next.js"
@@ -136,16 +148,16 @@ const About = () => {
                         backContent="Avanea"
                     />
                     <Card
-                        badge="Next.js"
-                        title="Portfolio website for myslef"
-                        footer="https://aryan-mallik.vercel.app/"
-                        backContent="Resume (This Project)"
-                    />
-                    <Card
                         badge="Html, CSS & Js"
                         title="Rock paper scissor using html css and JS"
                         footer="https://aryanmallik.github.io/rockpaperscissor/"
                         backContent="Rock Paper Scissor"
+                    />
+                    <Card
+                        badge="Next.js"
+                        title="Portfolio website for Event company"
+                        footer="https://the-perfect-plan.vercel.app/"
+                        backContent="The Perfect Plan"
                     />
                     <Card
                         badge="Html, CSS & Js"
