@@ -13,7 +13,7 @@ const Hero = () => {
                         <ul className={styles.sidebarList}>
                             <li><Link href="./about">About Me</Link></li>
                             <li><Link href="./photos">Photos</Link></li>
-                            <li><Link href="https://drive.google.com/file/d/1cqzdDOvYySLjgD21opFNXvk8Niedz2wn/view?usp=drive_link" download target="_blank">My resume</Link></li>
+                            <li><Link href="https://drive.google.com/file/d/1Nn2qozYWrndqhQX4NiKTnGRDdij5ekpU/view?usp=drive_link" download target="_blank">My resume</Link></li>
                         </ul>
                     </div>
 

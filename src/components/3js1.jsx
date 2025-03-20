@@ -9,14 +9,15 @@ import "./moon.css";
 
 const textureURL = "texture.jpg";
 const displacementURL = "displacement.jpg";
-// const textureURL = "a2.jpg";
-// const displacementURL = "a2.jpg";
+// const textureURL = "a.jpg";
+// const displacementURL = "a.jpg";
 
 async function fetchMoonPhase() {
     try {
         const response = await fetch("https://api.ipgeolocation.io/astronomy?apiKey=a1d7bb8a691b4b2ca931b938da1b4df2");
         const data = await response.json();
         return data.moon_phase;
+        // return "FULL_MOON";
     } catch (error) {
         console.error("Error fetching moon phase:", error);
         return "FULL_MOON";
@@ -42,7 +43,7 @@ function Moon({ phase }) {
                 displacementMap={displacementMap}
                 displacementScale={0}
                 bumpMap={displacementMap}
-                bumpScale={2.5}
+                bumpScale={3.5}
                 shininess={phase === "FULL_MOON" ? 10: 0}
             />
         </mesh>
@@ -69,7 +70,7 @@ const MoonScene = () => {
                 {phase === "FIRST_QUARTER" && <directionalLight position={[60, 0, 5]} intensity={2.9} />}
                 {phase === "LAST_QUARTER" && <directionalLight position={[-60, 0, 5]} intensity={2.9} />}
 
-                <hemisphereLight color={0xffffff} groundColor={0xffffff} intensity={0.1} />
+                <hemisphereLight color={0xffffff} groundColor={0xffffff} intensity={0.9} />
                 <OrbitControls enablePan={true} />
                 <Moon phase={phase} />
             </Canvas>
