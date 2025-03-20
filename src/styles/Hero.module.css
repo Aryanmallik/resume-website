@@ -171,6 +171,7 @@
 .animation > div > div {
   height: 2.81rem;
   margin-bottom: 2.81rem;
+  color:red;
   display: inline-block;
 }
 
