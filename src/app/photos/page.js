@@ -16,7 +16,7 @@ const Resume = () => {
         const fetchImages = async () => {
             try {
                 const response = await fetch(
-                    `https://avanea-f5cf1a1fd40c.herokuapp.com/api/google-drive-images?folderId=1n6JbL_DuqLcMOTlMOLzKqs8j0bby4iYU`
+                    `/api/google-drive-images?folderId=1n6JbL_DuqLcMOTlMOLzKqs8j0bby4iYU`
                 );
                 if (!response.ok) {
                     throw new Error("Failed to fetch images");
